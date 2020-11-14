@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>StellAR</title>
+  <meta name="Jesper Englund" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="main-font">
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar palette-4 w3-card w3-wide">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#game" class="w3-bar-item w3-button w3-padding-large w3-hide-small">STELLAR</a>
+      <a href="#technology" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TECHNOLOGY</a>
+      <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block palette-4 w3-hide w3-hide-large w3-hide-medium w3-top main-font" style="margin-top:46px">
+    <a href="#game" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">STELLAR</a>
+    <a href="#technology" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TECHNOLOGY</a>
+    <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Home Section -->
+    <div class="w3-container w3-center palette-1">
+      <p style="font-size:78px">STELLAR</p>
+    </div>
+
+    <!-- The Game Section -->
+    <div class="w3-container w3-center palette-2 l12" style="width:100% !important; padding:0px" id="game">
+      <h2 class="w3-wide header">THE GAME</h2>
+      <div class="w3-row" style="margin:0px !important">
+        <button class="w3-third w3-button clickable-container w3-padding-32" onclick="document.getElementById('firstModal').style.display='block'">
+          <p style="font-size:25px">Something</p>
+        </button>
+        <button class="w3-third w3-button clickable-container w3-padding-32" onclick="document.getElementById('secondModal').style.display='block'">
+          <p style="font-size:25px">Someting else</p>
+        </button>
+        <button class="w3-third w3-button clickable-container w3-padding-32" onclick="document.getElementById('thirdModal').style.display='block'">
+          <p style="font-size:25px">Whatever</p>
+        </button>
+      </div>
+    </div>
+
+    <!-- First Modal -->
+    <div id="firstModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1 w3-center w3-padding-32">
+          <span onclick="document.getElementById('firstModal').style.display='none'"
+         class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Something</h2>
+          <p class="w3-center"><i>Additional information</i></p>
+        </header>
+        <div class="w3-container palette-2 side-padding-32">
+          <p>Something more</p>
+        </div>
+        <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="ffirst"></button>
+        <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bfirst"></button>
+      </div>
+    </div>
+
+    <!-- Second Modal -->
+    <div id="secondModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1 w3-center w3-padding-32">
+          <span onclick="document.getElementById('secondModal').style.display='none'"
+         class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+         <h2 class="w3-wide">Something Else</h2>
+         <p class="w3-center"><i>Additional information</i></p>
+        </header>
+        <div class="w3-container palette-2 side-padding-32">
+          <p>Something more</p>
+        </div>
+        <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="fsecond"></button>
+        <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bsecond"></button>
+      </div>
+    </div>
+
+    <!-- Third Modal -->
+    <div id="thirdModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1 w3-center w3-padding-32">
+          <span onclick="document.getElementById('thirdModal').style.display='none'"
+         class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Whatever</h2>
+          <p class="w3-center"><i>Additional information</i></p>
+        </header>
+        <div class="w3-container palette-2 side-padding-32">
+          <p>Whatever more</p>
+        </div>
+        <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="fthird"></button>
+        <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bthird"></button>
+      </div>
+    </div>
+
+    <!-- The Technology Section -->
+    <div class="palette-1 w3-center w3-container zeropad" id="technology">
+      <h2 class="w3-wide header">TECHNOLOGY</h2>
+      <div class="zeropad" style="margin:0px !important">
+        <div class="w3-display-container" style="margin:0px !important">
+          <div class="mySlides zeropad">
+            <img class="zeropad" src="images/more.png" style="width:100%">
+          </div>
+          <div class="mySlides zeropad">
+            <img class="zeropad" src="images/more.png" style="width:100%">
+          </div>
+          <button class="w3-button palette-1 w3-display-left" onclick="plusDivs(-1)" style="margin:10px !important">&#10094;</button>
+          <button class="w3-button palette-1 w3-display-right" onclick="plusDivs(1)" style="margin:10px !important">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- The About Us Section -->
+    <div class="w3-container w3-center palette-2 main-font l12" style="width:100% !important; padding:0px" id="aboutus">
+      <h2 class="w3-wide header">ABOUT US</h2>
+    </div>
+
+    <!-- The Contact Section -->
+    <div class="w3-container w3-padding-32 palette-1" style="width:100%" id="contact">
+      <h2 class="w3-wide w3-center">CONTACT</h2>
+      <p class="w3-opacity w3-center"><i>Do you want to do business?</i></p>
+      <div class="w3-display-container w3-padding-16" style="height:200px">
+        <div class="w3-display-middle w3-left" style="width:350px">
+          <div class="w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i> Stockholm, Sweden<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> anemailadress@kth.se<br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- End Page Content -->
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-8 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

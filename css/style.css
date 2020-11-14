@@ -1,0 +1,94 @@
+.palette-1 {color:#fff !important;background-color:#443737 !important}
+.palette-1-light {color:#000 !important;background-color:#baa9a9 !important}
+.palette-1-dark {color:#fff !important;background-color:#221b1b !important}
+.p1:hover {color:#000 !important;background-color:#baa9a9 !important}
+
+.palette-2 {color:#fff !important;background-color:#272121 !important}
+.palette-2-light {color:#000 !important;background-color:#aea0a0 !important}
+.palette-2-dark {color:#fff !important;background-color:#131010 !important}
+
+.clickable-container {margin:0px !important}
+.clickable-container:hover {color:#000 !important;background-color:#aea0a0 !important}
+.clickable-container:active {border:0px !important; outline: 0}
+.clickable-container:focus {border:0px !important; outline: 0}
+
+.palette-3 {color:#fff !important;background-color:#ff0000 !important}
+.palette-3-light {color:#000 !important;background-color:#ff9999 !important}
+.palette-3-dark {color:#fff !important;background-color:#800000 !important}
+
+.palette-4 {color:#fff !important;background-color:#ff4d00 !important}
+.palette-4-light {color:#000 !important;background-color:#ffb899 !important}
+.palette-4-dark {color:#fff !important;background-color:#802600 !important}
+
+.main-font {
+  font-family: "Avenir Next" !important;
+}
+
+.col-1 {
+  height:474px;
+  padding-left: 35px;
+  padding-top: 10px;
+  font-size: 60px;
+  margin: 0px !important;
+}
+
+.medium{
+  font-size: 40px;
+}
+
+.header {
+  padding: 64px;
+}
+
+.nextbtn {
+  background-color:transparent;
+  border:0px;
+  color: #fff;
+}
+.nextbtn:hover {
+  color: #555;
+  cursor:pointer;
+}
+
+.nextbtn:visited {
+  background-color:transparent;
+  border:0px !important
+}
+
+
+.nextbtn:active {
+  color: #555;
+  background-color:transparent;
+  border:0px !important;
+  outline: 0
+}
+
+.nextbtn:focus {
+  color: #555;
+  background-color:transparent;
+  border:0px !important;
+  outline: 0
+}
+
+.side-padding-20 {
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+.zeropad {
+  padding: 0px !important;
+  margin: 0px !important
+}
+
+ul.myList {
+  list-style: none; /* Remove default bullets */
+}
+
+ul.myList li::before {
+  content: "\2022";
+  color: #bed1c5;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
