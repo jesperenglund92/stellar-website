@@ -40,29 +40,37 @@ window.onclick = function(event) {
   }
 }
 
-var flinas = document.getElementById("ffirst");
-flinas.addEventListener('click', function(){
+var ffirst = document.getElementById("ffirst");
+ffirst.addEventListener('click', function(){
     slidemodal(0, 1);
 });
-var blinas = document.getElementById("bfirst");
-blinas.addEventListener('click', function(){
-    slidemodal(0, 2);
+var bfirst = document.getElementById("bfirst");
+bfirst.addEventListener('click', function(){
+    slidemodal(0, 3);
 });
-var fbet = document.getElementById("fsecond");
-fbet.addEventListener('click', function(){
+var fsecond = document.getElementById("fsecond");
+fsecond.addEventListener('click', function(){
     slidemodal(1, 2);
 });
-var bbet = document.getElementById("bsecond");
-bbet.addEventListener('click', function(){
+var bsecond = document.getElementById("bsecond");
+bsecond.addEventListener('click', function(){
     slidemodal(1, 0);
 });
-var fbes = document.getElementById("fthird");
-fbes.addEventListener('click', function(){
-    slidemodal(2, 0);
+var fthird = document.getElementById("fthird");
+fthird.addEventListener('click', function(){
+    slidemodal(2, 3);
 });
-var bbes = document.getElementById("bthird");
-bbes.addEventListener('click', function(){
+var bthird = document.getElementById("bthird");
+bthird.addEventListener('click', function(){
     slidemodal(2, 1);
+});
+var ffourth = document.getElementById("ffourth");
+ffourth.addEventListener('click', function(){
+    slidemodal(3, 0);
+});
+var bfourth = document.getElementById("bfourth");
+bfourth.addEventListener('click', function(){
+    slidemodal(3, 2);
 });
 
 function slidemodal(current, newmodal) {

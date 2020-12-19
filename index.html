@@ -17,7 +17,7 @@
     <div class="w3-bar palette-4 w3-card w3-wide">
       <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-      <a href="#game" class="w3-bar-item w3-button w3-padding-large w3-hide-small">STELLAR</a>
+      <a href="#game" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE GAME</a>
       <a href="#technology" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TECHNOLOGY</a>
       <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
       <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
@@ -26,7 +26,7 @@
 
   <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
   <div id="navDemo" class="w3-bar-block palette-4 w3-hide w3-hide-large w3-hide-medium w3-top main-font" style="margin-top:46px">
-    <a href="#game" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">STELLAR</a>
+    <a href="#game" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">THE GAME</a>
     <a href="#technology" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TECHNOLOGY</a>
     <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
@@ -44,14 +44,17 @@
     <div class="w3-container w3-center palette-2 l12" style="width:100% !important; padding:0px" id="game">
       <h2 class="w3-wide header">THE GAME</h2>
       <div class="w3-row" style="margin:0px !important">
-        <button class="w3-third w3-button clickable-container w3-padding-32" onclick="document.getElementById('firstModal').style.display='block'">
-          <p style="font-size:25px">Something</p>
+        <button class="w3-quarter w3-button clickable-container w3-padding-32" onclick="document.getElementById('firstModal').style.display='block'">
+          <p style="font-size:25px">Overview</p>
         </button>
-        <button class="w3-third w3-button clickable-container w3-padding-32" onclick="document.getElementById('secondModal').style.display='block'">
-          <p style="font-size:25px">Someting else</p>
+        <button class="w3-quarter w3-button clickable-container w3-padding-32" onclick="document.getElementById('secondModal').style.display='block'">
+          <p style="font-size:25px">Technology</p>
         </button>
-        <button class="w3-third w3-button clickable-container w3-padding-32" onclick="document.getElementById('thirdModal').style.display='block'">
-          <p style="font-size:25px">Whatever</p>
+        <button class="w3-quarter w3-button clickable-container w3-padding-32" onclick="document.getElementById('thirdModal').style.display='block'">
+          <p style="font-size:25px">Challenges</p>
+        </button>
+        <button class="w3-quarter w3-button clickable-container w3-padding-32" onclick="document.getElementById('fourthModal').style.display='block'">
+          <p style="font-size:25px">Related Work</p>
         </button>
       </div>
     </div>
@@ -62,11 +65,51 @@
         <header class="w3-container palette-1 w3-center w3-padding-32">
           <span onclick="document.getElementById('firstModal').style.display='none'"
          class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-          <h2 class="w3-wide">Something</h2>
-          <p class="w3-center"><i>Additional information</i></p>
+          <h2 class="w3-wide">Overview</h2>
+          <p class="w3-center"><i>Create your own stellar system in AR</i></p>
         </header>
-        <div class="w3-container palette-2 side-padding-32">
-          <p>Something more</p>
+        <div class="w3-container palette-2 side-padding-64">
+          <p>
+            <h5>Description</h5>
+            StellAR is about creating your own stellar system which you can view in AR.
+          </p>
+          <p>
+            This includes creating and customizing your own planets and to set them out  in the star system on unique orbits.
+            In the customization the user can choose between making a solid or a gas planet.
+            The user can then change the look and size of the planets.
+          </p>
+          <p>
+            In the stellar system part the user gets to try to set a stable orbit for a planet.
+            But there is also the option of just goofing around and making planets crash into each other.
+            It's possible to save multiple star systems and also to change the gravity settings for different orbit speeds.
+          </p>
+          <p>
+            In summary StellAR is about creating your own star system with custom planets and experimenting with different orbits for the planets.
+          </p>
+          <p>
+            <h5>Motivations</h5>
+            <ul>
+              <li>Space is exciting and learning about it is fun!</li>
+              <li>We wanted to learn about AR, physical simulations, 3D-modelling in blender, procedural generation in Unity</li>
+              <li>The project could  make people more interested in space and physics</li>
+            </ul>
+          </p>
+          <p>
+            <h5>Goals</h5>
+            <ul>
+              <li>Creating a working simulation of a solar system that allows for user input and interaction</li>
+              <li>Creating a project and group structure that allows for efficient and productive work</li>
+              <li>Create a fun experience</li>
+            </ul>
+          </p>
+          <p>
+            <h5>Obstacles & Lessons learned</h5>
+            The biggest obstacle we had was that we didn’t figure out data persistence between scenes and sessions until very late in the process,
+            which meant that we didn’t have a real start to finish-game loop until the data persistence worked.
+            And had we started working on data persistence much earlier, we wouldn't have know what data would have to be saved.
+            <p>Another obstacle was of course the one presented by Covid-19 which meant that almost all collaboration had to be done remotely.</p>
+            <p>One of the lessons we learned in the process was that better device hardware such as camera and processor makes a better AR experience in the case of tracking.</p>
+          </p>
         </div>
         <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="ffirst"></button>
         <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bfirst"></button>
@@ -79,7 +122,7 @@
         <header class="w3-container palette-1 w3-center w3-padding-32">
           <span onclick="document.getElementById('secondModal').style.display='none'"
          class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-         <h2 class="w3-wide">Something Else</h2>
+         <h2 class="w3-wide">Technology</h2>
          <p class="w3-center"><i>Additional information</i></p>
         </header>
         <div class="w3-container palette-2 side-padding-32">
@@ -96,7 +139,7 @@
         <header class="w3-container palette-1 w3-center w3-padding-32">
           <span onclick="document.getElementById('thirdModal').style.display='none'"
          class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-          <h2 class="w3-wide">Whatever</h2>
+          <h2 class="w3-wide">Challenges</h2>
           <p class="w3-center"><i>Additional information</i></p>
         </header>
         <div class="w3-container palette-2 side-padding-32">
@@ -107,9 +150,26 @@
       </div>
     </div>
 
-    <!-- The Technology Section -->
+    <!-- Fourth Modal -->
+    <div id="fourthModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1 w3-center w3-padding-32">
+          <span onclick="document.getElementById('fourthModal').style.display='none'"
+         class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Related Work</h2>
+          <p class="w3-center"><i>Additional information</i></p>
+        </header>
+        <div class="w3-container palette-2 side-padding-32">
+          <p>Whatever more</p>
+        </div>
+        <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="ffourth"></button>
+        <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bfourth"></button>
+      </div>
+    </div>
+
+    <!-- The Media Section -->
     <div class="palette-1 w3-center w3-container zeropad" id="technology">
-      <h2 class="w3-wide header">TECHNOLOGY</h2>
+      <h2 class="w3-wide header">MEDIA</h2>
       <div class="zeropad" style="margin:0px !important">
         <div class="w3-display-container" style="margin:0px !important">
           <div class="mySlides zeropad">
