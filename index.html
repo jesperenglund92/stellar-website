@@ -127,36 +127,7 @@
         </header>
         <div class="w3-container palette-2 side-padding-32">
           <p>
-            <!-- AR TRACKING --->
-            <h5>AR-TRACKING</h5>
-            During the project we noticed that the AR-tracking provided with ARCore and ARKit is not always the most accurate. We built our app around markerless tracking, thinking that it would be better for a portable experience to not have some arbitrary peripheral. We used the built in feature-point and plane tracking of the AR-toolkits wrapped by ARFoundation. We noticed that reflective surfaces, such as large screens, can be detrimental to the spatial tracking. There were also issues with how much hardware affected the tracking, as we noticed that phones with more advanced cameras usually performed better tracking-wise.
-            <br>
-
-            <!-- MESH GENERATION --->
-            <br>
-            <h5>GEOMETRY OF PLANET MESH</h5>
-            Finding a good way of representing a sphere with triangles is not completely trivial. We started out using a cube which we deformed into a sphere by setting every point to unit distance from the center. This option gave us a lot of freedom when it came to how detailed we wanted our sphere to be. Simply increasing the number of vertices in every face of the cube we got a finer division. This approach does however give some weird visual artifacts and prominent seems where the cube faces meet.
-            <br>
-            In the end we ended up with a solution built upon the Ico Sphere. We start out with an icosahedron where every vertex is unit length from the center. We can then divide every triangle into three new triangles and thus increase the detail and make the shape more sphere-like. This approach gives us less control of the resolution since we can only increase the number of triangles three fold every time. We did however get rid of the artifacting from the previous method and overall it looked a lot better. 
-            <br>
-
-            <!--  SAVING / LOADING--->
-            <br>
-            <h5>SERIALIZATION AND PERSISTANCE</h5>
-            To serialize and create custom data structures to be able to save scene and game object data was fairly straightforward. We converted the data to JSON files which we stored locally on the users device. However, we had some trouble with loading the data correctly since the aesthetic data and physics data were separated. This made it important to load the correct match of aesthetic and physics data to a planet. It also required us to load the data in a specific order and to clean up the scene between loading star systems.
-            <br>
-
-            <!-- GRAVITY SIM --->
-            <br>
-            <h5>NEWTONIAN GRAVITY SIM</h5>
-            The two major approaches on how to create gravity in Unity are force based and acceleration based. In the force based method forces are applied to objects in a scene in accordance to the Newtonian gravity equation. Then the Unity physics engine automatically calculates the velocity and next position of the objects. In contrast, in the acceleration based methods the acceleration is calculated in accordance with the Newtonian gravity equation. This approach also decouples the calculations from the built-in physics engine. This means that the position and velocity calculations of the objects have to be scripted manually. After experimenting with both methods we decided to go with the acceleration based method. This is because we had problems with the trajectory calculations with the force based method. When the trajectory is calculated the simulation is paused and the trajectory simulation starts in order to predict how a planet would move in the starsystem given the initial velocity and position which is decided by the user. With the force based method the planets did not move exactly with their trajectories, but with the acceleration based method we got more control of the calculations which in the end resulted in a better trajectory. A great source of inspiration was: Sebastian Lague - Coding Adventure
-            <br>
-            
-            <!--  GAS PLANET --->
-            <br>
-            <h5>GAS PLANET STORM</h5>
-            The banding and swirling noise of the gas planets was easy enough to implement in Shadergraph using various generated noise and UV-mapping-tricks. The storms proved to be more challenging. For aesthetic purposes the ideal storm would affect the swirling noise in the bands on the material. This was put to the wayside as it would have required something along the lines of a  fluid simulation which, even though it would have been possible to do, might have affected the performance on less advanced phones. Instead, a method using a simple oval texture that was manipulated with various UV-mapping nodes provided a convincing simili to a storm. This method was based on what reddit user jamqdlaty presents here https://www.reddit.com/r/Unity3D/comments/hiljpk/gas_giant_shader_shadergraph/ after a discussion with them through the forum.
-            </p>
+          </p>
         </div>
         <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="fsecond"></button>
         <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bsecond"></button>
@@ -173,7 +144,38 @@
           <p class="w3-center"><i>Additional information</i></p>
         </header>
         <div class="w3-container palette-2 side-padding-32">
-          <p>Whatever more</p>
+          <p>
+              <!-- AR TRACKING --->
+              <h5>AR-TRACKING</h5>
+              During the project we noticed that the AR-tracking provided with ARCore and ARKit is not always the most accurate. We built our app around markerless tracking, thinking that it would be better for a portable experience to not have some arbitrary peripheral. We used the built in feature-point and plane tracking of the AR-toolkits wrapped by ARFoundation. We noticed that reflective surfaces, such as large screens, can be detrimental to the spatial tracking. There were also issues with how much hardware affected the tracking, as we noticed that phones with more advanced cameras usually performed better tracking-wise.
+              <br>
+  
+              <!-- MESH GENERATION --->
+              <br>
+              <h5>GEOMETRY OF PLANET MESH</h5>
+              Finding a good way of representing a sphere with triangles is not completely trivial. We started out using a cube which we deformed into a sphere by setting every point to unit distance from the center. This option gave us a lot of freedom when it came to how detailed we wanted our sphere to be. Simply increasing the number of vertices in every face of the cube we got a finer division. This approach does however give some weird visual artifacts and prominent seems where the cube faces meet.
+              <br>
+              In the end we ended up with a solution built upon the Ico Sphere. We start out with an icosahedron where every vertex is unit length from the center. We can then divide every triangle into three new triangles and thus increase the detail and make the shape more sphere-like. This approach gives us less control of the resolution since we can only increase the number of triangles three fold every time. We did however get rid of the artifacting from the previous method and overall it looked a lot better. 
+              <br>
+  
+              <!--  SAVING / LOADING--->
+              <br>
+              <h5>SERIALIZATION AND PERSISTANCE</h5>
+              To serialize and create custom data structures to be able to save scene and game object data was fairly straightforward. We converted the data to JSON files which we stored locally on the users device. However, we had some trouble with loading the data correctly since the aesthetic data and physics data were separated. This made it important to load the correct match of aesthetic and physics data to a planet. It also required us to load the data in a specific order and to clean up the scene between loading star systems.
+              <br>
+  
+              <!-- GRAVITY SIM --->
+              <br>
+              <h5>NEWTONIAN GRAVITY SIM</h5>
+              The two major approaches on how to create gravity in Unity are force based and acceleration based. In the force based method forces are applied to objects in a scene in accordance to the Newtonian gravity equation. Then the Unity physics engine automatically calculates the velocity and next position of the objects. In contrast, in the acceleration based methods the acceleration is calculated in accordance with the Newtonian gravity equation. This approach also decouples the calculations from the built-in physics engine. This means that the position and velocity calculations of the objects have to be scripted manually. After experimenting with both methods we decided to go with the acceleration based method. This is because we had problems with the trajectory calculations with the force based method. When the trajectory is calculated the simulation is paused and the trajectory simulation starts in order to predict how a planet would move in the starsystem given the initial velocity and position which is decided by the user. With the force based method the planets did not move exactly with their trajectories, but with the acceleration based method we got more control of the calculations which in the end resulted in a better trajectory. A great source of inspiration was: Sebastian Lague - Coding Adventure
+              <br>
+              
+              <!--  GAS PLANET --->
+              <br>
+              <h5>GAS PLANET STORM</h5>
+              The banding and swirling noise of the gas planets was easy enough to implement in Shadergraph using various generated noise and UV-mapping-tricks. The storms proved to be more challenging. For aesthetic purposes the ideal storm would affect the swirling noise in the bands on the material. This was put to the wayside as it would have required something along the lines of a  fluid simulation which, even though it would have been possible to do, might have affected the performance on less advanced phones. Instead, a method using a simple oval texture that was manipulated with various UV-mapping nodes provided a convincing simili to a storm. This method was based on what reddit user jamqdlaty presents here https://www.reddit.com/r/Unity3D/comments/hiljpk/gas_giant_shader_shadergraph/ after a discussion with them through the forum.
+              
+          </p>
         </div>
         <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="fthird"></button>
         <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bthird"></button>
@@ -200,7 +202,7 @@
     <!-- The Media Section -->
     <div class="palette-1 w3-center w3-container zeropad" id="technology">
       <h2 class="w3-wide header">MEDIA</h2>
-      <div class="zeropad" style="margin:0px !important">
+        <div class="zeropad" style="margin:0px !important">
         <div class="w3-display-container" style="margin:0px !important">
           <div class="mySlides zeropad">
             <img class="zeropad" src="images/more.png" style="width:100%">
