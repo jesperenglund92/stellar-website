@@ -1,9 +1,9 @@
-.palette-1 {color:#fff !important;background-color:#443737 !important}
+.palette-1 {color:#fff !important;background-color:#232325 !important}
 .palette-1-light {color:#000 !important;background-color:#baa9a9 !important}
 .palette-1-dark {color:#fff !important;background-color:#221b1b !important}
 .p1:hover {color:#000 !important;background-color:#baa9a9 !important}
 
-.palette-2 {color:#fff !important;background-color:#272121 !important}
+.palette-2 {color:#fff !important;background-color:#151518 !important}
 .palette-2-light {color:#000 !important;background-color:#aea0a0 !important}
 .palette-2-dark {color:#fff !important;background-color:#131010 !important}
 
@@ -91,4 +91,21 @@ ul.myList li::before {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+.member-card{
+  display: flex;
+  justify-content: space-around;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.profile-pic {
+  width: 11vw;
+  height: 11vw;
+  object-fit: cover;
+  overflow: hidden;
 }
