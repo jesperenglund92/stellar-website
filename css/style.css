@@ -78,6 +78,11 @@
   padding: 50px;
 }
 
+.side-padding-64 {
+  padding-left: 64px;
+  padding-right: 64px
+}
+
 .zeropad {
   padding: 0px !important;
   margin: 0px !important
