@@ -74,6 +74,9 @@
   padding-left: 20px;
   padding-right: 20px
 }
+.content{
+  padding: 50px;
+}
 
 .zeropad {
   padding: 0px !important;
@@ -96,16 +99,38 @@ ul.myList li::before {
 .member-card{
   display: flex;
   justify-content: space-around;
+  min-width: 10vw;
+  max-width: 10vw;
 }
 .info{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: left;
+  background-color: #151518;
 }
 
 .profile-pic {
-  width: 11vw;
-  height: 11vw;
+  width: 15vw;
+  height: 15vw;
   object-fit: cover;
   overflow: hidden;
+  filter: grayscale();
+}
+.image{
+  display: block;
+  max-width:600px;
+  max-height:600px;
+  width: auto;
+  height: auto;
+  background-color: #151518;
+  object-fit:none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .info {
+    flex-direction: column-reverse;
+  }
+  image{
+    min-height: 100%;
+  }
 }

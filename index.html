@@ -141,35 +141,41 @@
       <div class="container">
         <div class="row">
 
+          <!------ ABOUT US BUTTONS ----------------------------->
+
           <button class="col-xs-2 w3-button clickable-container w3-padding-32"
           onclick="document.getElementById('LindaModal').style.display='block'">
-          <img class="profile-pic" src="images/linda.png"> 
-            <p style="font-size:25px; margin: 0.5em;"><b>Linda Cnattingius</b></p>
-            <p style="font-size:12px; margin: 0.5em;"><i>Planet Creation Interactions and UX & UI design</i></p>
+          <img class="profile-pic" src="images/linda.jpeg"> 
+            <p style="font-size:18px; margin: 0.5em;">Linda Cnattingius</p>
+            <p style="font-size:12px; margin: 0.5em;"><i>UX&UI design and Planet Creation</i></p>
           </button>
 
           <button class="col-xs-2 w3-button clickable-container w3-padding-32"
             onclick="document.getElementById('CalleModal').style.display='block'">
-            <img class="profile-pic" src="images/Calle.png">
-            <p style="font-size:25px">Carl Calado Zettergren</p>
+            <img class="profile-pic" src="images/calle.jpeg">
+            <p style="font-size:18px; margin: 0.5em;">Carl Calado Zettergren</p>
+            <p style="font-size:12px; margin: 0.5em;"><i>AR and Gasplanets</i></p>
           </button>
 
           <button class="col-xs-2 w3-button clickable-container w3-padding-32"
           onclick="document.getElementById('PlatonModal').style.display='block'">
-            <img class="profile-pic" src="images/platon.jpg">
-            <p style="font-size:25px">Platon Woxler</p>
+            <img class="profile-pic" src="images/platon.jpeg">
+            <p style="font-size:20px; margin: 0.5em;">Platon Woxler</p>
+            <p style="font-size:12px; margin: 0.5em;"><i>Planet Creation and Mesh Generation</i></p>
           </button>
 
           <button class="col-xs-2 w3-button clickable-container w3-padding-32"
           onclick="document.getElementById('JesperModal').style.display='block'">
-            <img class="profile-pic" src="images/jesper.jpg">
-            <p style="font-size:25px">Jesper Englund</p>
+            <img class="profile-pic" src="images/jesper.jpeg">
+            <p style="font-size:20px; margin: 0.5em;">Jesper Englund</p>
+            <p style="font-size:12px; margin: 0.5em;"><i>Data management & Mesh Generation</i></p>
           </button>
 
           <button class="col-xs-2 w3-button clickable-container w3-padding-32"
           onclick="document.getElementById('JussiModal').style.display='block'">
-            <img class="profile-pic" src="images/jussi.jpg">
-            <p style="font-size:25px">Jussi Kangas</p>
+            <img class="profile-pic" src="images/jussi.jpeg">
+            <p style="font-size:20px; margin: 0.5em;">Jussi Kangas</p>
+            <p style="font-size:12px; margin: 0.5em;"><i>Physics Simulations</i></p>
           </button>
 
         </div>
@@ -189,9 +195,20 @@
             <h2 class="w3-wide">Linda Cnattingius</h2>
             <p class="w3-center"><i>lindacn@kth.se</i></p>
           </header>
-          <div class="w3-container palette-2 side-padding-32">
-            <h3>Responsibilities</h3>
-            <p>I had </p>
+          <div class="info">
+            <div class="w3-container palette-2 side-padding-32 content">
+              <h3>Responsibilities</h3>
+              <ul>
+                <li>Customized textures and shaders for solid planets and sun</li>
+                <li>Particle system generation</li>
+                <li>User Interface design with customized sprites and UI System</li>
+                <li>Interactions for planet customization</li>
+                <li>Shake detection for randomization</li>
+                <li>Triangle slider for color customization</li>
+              </ul>
+            </div>
+            <!------ ÄNDRA BILD HÄR ----------------------------->
+            <img class="col-md-3 image" style="padding: 10;" src="images/linda.jpeg">
           </div>
         </div>
       </div>
@@ -201,11 +218,20 @@
           <header class="w3-container palette-1 w3-center w3-padding-32">
             <span onclick="document.getElementById('CalleModal').style.display='none'"
               class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-            <h2 class="w3-wide">Whatever</h2>
-            <p class="w3-center"><i>Additional information</i></p>
+            <h2 class="w3-wide">Carl Zettergren Calado</h2>
+            <p class="w3-center"><i>carzet@kth.se</i></p>
           </header>
-          <div class="w3-container palette-2 side-padding-32">
-            <p>Whatever more</p>
+          <div class="info">
+            <div class="w3-container palette-2 side-padding-32 content">
+              <h3>Responsibilities</h3>
+              <ul>
+                <li>Initial AR-Scene management and implementation in Unity3d using ARFoundation</li>
+                <li>Data-gathering about exoplanets and stellar systems</li>
+                <li>Customizable procedural texture for gas planets using Shadergraph</li>
+              </ul>
+            </div>
+            <!------ ÄNDRA BILD HÄR ----------------------------->
+            <img class="col-md-3 image" style="padding: 10;" src="images/calle.jpeg">
           </div>
         </div>
       </div>
@@ -215,11 +241,19 @@
           <header class="w3-container palette-1 w3-center w3-padding-32">
             <span onclick="document.getElementById('PlatonModal').style.display='none'"
               class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-            <h2 class="w3-wide">Platon Woxeler</h2>
+            <h2 class="w3-wide">Platon Woxler</h2>
             <p class="w3-center"><i>platon@kth.se</i></p>
           </header>
-          <div class="w3-container palette-2 side-padding-32">
-            <p>Mesh</p>
+          <div class="info">
+            <div class="w3-container palette-2 side-padding-32 content">
+              <h3>Responsibilities</h3>
+              <ul>
+                <li>Procedural mesh generation and manipulation</li>
+                <li>User interaction for mesh deformation & Planet Creation</li>
+              </ul>
+            </div>
+            <!------ ÄNDRA BILD HÄR ----------------------------->
+            <img class="col-md-3 image" style="padding: 10;" src="images/platon.jpeg">
           </div>
         </div>
       </div>
@@ -233,9 +267,20 @@
                 <h2 class="w3-wide">Jesper Englund</h2>
                 <p class="w3-center"><i>email@kth.se</i></p>
               </header>
-              <div class="w3-container palette-2 side-padding-32">
-                <p>Craters</p>
-              </div>
+              <div class="info">
+                <div class="w3-container palette-2 side-padding-32 content">
+                    <h3>Responsibilities</h3>
+                    <ul>
+                      <li>Procedural mesh generation and manipulation</li>
+                      <li>Data management - Serialization of assets and saving planet data between scenes and game sessions</li>
+                      <li>Sound design</li>
+                      <li>Animations - Explosions and UI</li>
+                      <li>3D modelling - Asteroids</li>
+                    </ul>
+                </div>
+                <!------ ÄNDRA BILD HÄR ----------------------------->
+                <img class="col-md-3 image" style="padding: 10;" src="images/jesper.jpeg">
+            </div>
             </div>
           </div>
             <!------ Jussi ----------------------------->
@@ -247,66 +292,20 @@
                 <h2 class="w3-wide">Jussi Kangas</h2>
                 <p class="w3-center"><i>JussiKangas@kth.se</i></p>
               </header>
-              <div class="w3-container palette-2 side-padding-32">
-                <h3>Responsibilities</h3>
-                <p>I was in charge of ......</p>
+              <div class="info">
+                <div class="w3-container palette-2 side-padding-32 content">
+                  <h3>Responsibilities</h3>
+                  <ul>
+                    <li>Created the Newtonian gravity simulation, trajectory calculation and options for gravity settings</li>
+                    <li>Interactions related to the gravity simulation (trajectory, rotation) in the AR-scene</li>
+                    <li>Serialization of  assets and primarily saving the physics data between scenes and game sessions</li>
+                  </ul>
+                </div>
+                <!------ ÄNDRA BILD HÄR ----------------------------->
+                <img class="col-md-3 image" style="padding: 10;" src="images/jussi.jpeg">
               </div>
             </div>
           </div>
-
-      <!-- <div>
-        <div class="member-card">
-          <div class="img-container">
-            <img src="images/linda.png">
-          </div>
-          <div class="info">
-            <h2>Linda Cnattingius</h2>
-            <p>UX/UI design and planet graphics</p>
-            <p>lindacn@kth.se</p>
-          </div>
-        </div>
-        <div class="member-card">
-          <div class="img-container">
-            <img src="images/Calle.png">
-          </div>
-          <div class="info">
-            <h2>Carl Calado Zettergren</h2>
-            <p>carzet@kth.se</p>
-            <p>AR</p>
-          </div>
-        </div>
-        <div class="member-card">
-          <div class="img-container">
-            <img src="images/jesper.jpg">
-          </div>
-          <div class="info">
-            <h2>Jesper Englund</h2>
-            <p>jesper@kth.se</p>
-            <p>Craters</p>
-          </div>
-        </div>
-      </div>
-      <div class="member-card">
-        <div class="img-container">
-          <img src="images/jussi.jpg">
-        </div>
-        <div class="info">
-          <h2>Jussi Kangas</h2>
-          <p>jkangas@kth.se</p>
-          <p>Trajectory & Gravity</p>
-        </div>
-      </div>
-      <div class="member-card">
-        <div class="img-container">
-          <img src="images/platon.jpg">
-        </div>
-        <div class="info">
-          <h2>Platon Woxler</h2>
-          <p>platon@kth.se</p>
-          <p>Mesh</p>
-        </div>
-      </div>
-    </div> -->
     </div>
 
     <!-- The Contact Section -->
@@ -325,11 +324,6 @@
 
     <!-- End Page Content -->
 
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-8 w3-center w3-opacity w3-light-grey w3-xlarge">
-      <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-      </p>
-    </footer>
     <script src="js/script.js"></script>
 </body>
 
