@@ -1,9 +1,9 @@
-.palette-1 {color:#fff !important;background-color:#443737 !important}
+.palette-1 {color:#fff !important;background-color:#232325 !important}
 .palette-1-light {color:#000 !important;background-color:#baa9a9 !important}
 .palette-1-dark {color:#fff !important;background-color:#221b1b !important}
 .p1:hover {color:#000 !important;background-color:#baa9a9 !important}
 
-.palette-2 {color:#fff !important;background-color:#272121 !important}
+.palette-2 {color:#fff !important;background-color:#151518 !important}
 .palette-2-light {color:#000 !important;background-color:#aea0a0 !important}
 .palette-2-dark {color:#fff !important;background-color:#131010 !important}
 
@@ -74,6 +74,9 @@
   padding-left: 20px;
   padding-right: 20px
 }
+.content{
+  padding: 50px;
+}
 
 .side-padding-64 {
   padding-left: 64px;
@@ -96,4 +99,43 @@ ul.myList li::before {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+.member-card{
+  display: flex;
+  justify-content: space-around;
+  min-width: 10vw;
+  max-width: 10vw;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  background-color: #151518;
+}
+
+.profile-pic {
+  width: 15vw;
+  height: 15vw;
+  object-fit: cover;
+  overflow: hidden;
+  filter: grayscale();
+}
+.image{
+  display: block;
+  max-width:600px;
+  max-height:600px;
+  width: auto;
+  height: auto;
+  background-color: #151518;
+  object-fit:none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .info {
+    flex-direction: column-reverse;
+  }
+  image{
+    min-height: 100%;
+  }
 }
