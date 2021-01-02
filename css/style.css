@@ -74,6 +74,10 @@
   padding-left: 20px;
   padding-right: 20px
 }
+.side-padding-32 {
+  padding-left: 50px;
+  padding-right: 50px
+}
 .content{
   padding: 50px;
 }
@@ -138,4 +142,7 @@ ul.myList li::before {
   image{
     min-height: 100%;
   }
+}
+h5{
+  font-weight: bold;
 }
