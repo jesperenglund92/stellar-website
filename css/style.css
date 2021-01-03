@@ -146,3 +146,7 @@ ul.myList li::before {
 h5{
   font-weight: bold;
 }
+
+.btn:hover {color:#000 !important;background-color:#ffb899 !important}
+.btn:active {border:0px !important; outline: 0}
+.btn:focus {border:0px !important; outline: 0}
