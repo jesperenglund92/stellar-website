@@ -176,7 +176,7 @@
 
               <!-- GRAVITY SIM --->
               <br>
-              <h5>NEWTONIAN GRAVITY SIM</h5>
+              <h5>NEWTONIAN GRAVITY SIMULATION</h5>
               The two major approaches on how to create gravity in Unity are force based and acceleration based. In the force based method forces are applied to objects in a scene in accordance to the Newtonian gravity equation. Then the Unity physics engine automatically calculates the velocity and next position of the objects. In contrast, in the acceleration based methods the acceleration is calculated in accordance with the Newtonian gravity equation. This approach also decouples the calculations from the built-in physics engine. This means that the position and velocity calculations of the objects have to be scripted manually. After experimenting with both methods we decided to go with the acceleration based method. This is because we had problems with the trajectory calculations with the force based method. When the trajectory is calculated the simulation is paused and the trajectory simulation starts in order to predict how a planet would move in the starsystem given the initial velocity and position which is decided by the user. With the force based method the planets did not move exactly with their trajectories, but with the acceleration based method we got more control of the calculations which in the end resulted in a better trajectory. A great source of inspiration was: Sebastian Lague - Coding Adventure
               <br>
 
