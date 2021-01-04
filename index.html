@@ -28,7 +28,8 @@
   </div>
 
   <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-  <div id="navDemo" class="w3-bar-block palette-4 w3-hide w3-hide-large w3-hide-medium w3-top main-font" style="margin-top:46px">
+  <div id="navDemo" class="w3-bar-block palette-4 w3-hide w3-hide-large w3-hide-medium w3-top main-font"
+    style="margin-top:46px">
     <a href="#game" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">THE GAME</a>
     <a href="#technology" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MEDIA</a>
     <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
@@ -40,36 +41,42 @@
 
     <!-- Home Section -->
     <div class="w3-container w3-center palette-1">
-      <img src="images/Logo.png" style="width: 50vw;"/>
+      <img src="images/Logo.png" style="width: 50vw;" />
     </div>
 
     <!-- The Game Section -->
     <div class="w3-container w3-center palette-2 l12" style="width:100% !important; padding:0px" id="game">
       <h2 class="w3-wide header">THE GAME</h2>
       <div class="w3-row" style="margin:0px !important">
-      <div class="w3-half vid-container">
-        <iframe class="responsive-iframe"  src="https://www.youtube-nocookie.com/embed/8djT-2qyHo0" 
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-      </div>
         <div class="w3-half vid-container">
-        <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/SW5PgHYzFEU" 
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
+          <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/8djT-2qyHo0" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="w3-half vid-container">
+          <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/SW5PgHYzFEU" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
-      </div>
-            
+
       <div class="w3-row" style="margin:0px !important">
-        <button class="w3-quarter w3-button clickable-container w3-padding-32" onclick="document.getElementById('firstModal').style.display='block'">
+        <button class="w3-quarter w3-button clickable-container w3-padding-32"
+          onclick="document.getElementById('firstModal').style.display='block'">
           <p style="font-size:25px">Overview</p>
         </button>
-        <button class="w3-quarter w3-button clickable-container w3-padding-32" onclick="document.getElementById('secondModal').style.display='block'">
+        <button class="w3-quarter w3-button clickable-container w3-padding-32"
+          onclick="document.getElementById('secondModal').style.display='block'">
           <p style="font-size:25px">Technology</p>
         </button>
-        <button class="w3-quarter w3-button clickable-container w3-padding-32" onclick="document.getElementById('thirdModal').style.display='block'">
+        <button class="w3-quarter w3-button clickable-container w3-padding-32"
+          onclick="document.getElementById('thirdModal').style.display='block'">
           <p style="font-size:25px">Challenges</p>
         </button>
-        <button class="w3-quarter w3-button clickable-container w3-padding-32" onclick="document.getElementById('fourthModal').style.display='block'">
+        <button class="w3-quarter w3-button clickable-container w3-padding-32"
+          onclick="document.getElementById('fourthModal').style.display='block'">
           <p style="font-size:25px">Related Work</p>
         </button>
       </div>
@@ -80,51 +87,59 @@
       <div class="w3-modal-content w3-animate-top w3-card-4">
         <header class="w3-container palette-1-dark w3-center w3-padding-32">
           <span onclick="document.getElementById('firstModal').style.display='none'"
-         class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+            class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
           <h2 class="w3-wide">Overview</h2>
           <p class="w3-center"><i>Create your own stellar system in AR</i></p>
         </header>
         <div class="w3-container palette-2-dark side-padding-64">
           <p>
-            <h5>Description</h5>
-            StellAR is about creating your own stellar system which you can view in AR.
+          <h5>Description</h5>
+          StellAR is about creating your own stellar system which you can view in AR.
           </p>
           <p>
-            This includes creating and customizing your own planets and to set them out  in the star system on unique orbits.
+            This includes creating and customizing your own planets and to set them out in the star system on unique
+            orbits.
             In the customization the user can choose between making a solid or a gas planet.
             The user can then change the look and size of the planets.
           </p>
           <p>
             In the stellar system part the user gets to try to set a stable orbit for a planet.
             But there is also the option of just goofing around and making planets crash into each other.
-            It's possible to save multiple star systems and also to change the gravity settings for different orbit speeds.
+            It's possible to save multiple star systems and also to change the gravity settings for different orbit
+            speeds.
           </p>
           <p>
-            In summary StellAR is about creating your own star system with custom planets and experimenting with different orbits for the planets.
+            In summary StellAR is about creating your own star system with custom planets and experimenting with
+            different orbits for the planets.
           </p>
           <p>
-            <h5>Motivations</h5>
-            <ul>
-              <li>Space is exciting and learning about it is fun!</li>
-              <li>We wanted to learn about AR, physical simulations, 3D-modelling in blender, procedural generation in Unity</li>
-              <li>The project could  make people more interested in space and physics</li>
-            </ul>
+          <h5>Motivations</h5>
+          <ul>
+            <li>Space is exciting and learning about it is fun!</li>
+            <li>We wanted to learn about AR, physical simulations, 3D-modelling in blender, procedural generation in
+              Unity</li>
+            <li>The project could make people more interested in space and physics</li>
+          </ul>
           </p>
           <p>
-            <h5>Goals</h5>
-            <ul>
-              <li>Creating a working simulation of a solar system that allows for user input and interaction</li>
-              <li>Creating a project and group structure that allows for efficient and productive work</li>
-              <li>Create a fun experience</li>
-            </ul>
+          <h5>Goals</h5>
+          <ul>
+            <li>Creating a working simulation of a solar system that allows for user input and interaction</li>
+            <li>Creating a project and group structure that allows for efficient and productive work</li>
+            <li>Create a fun experience</li>
+          </ul>
           </p>
           <p>
-            <h5>Obstacles & Lessons learned</h5>
-            The biggest obstacle we had was that we didn’t figure out data persistence between scenes and sessions until very late in the process,
-            which meant that we didn’t have a real start to finish-game loop until the data persistence worked.
-            And had we started working on data persistence much earlier, we wouldn't have know what data would have to be saved.
-            <p>Another obstacle was of course the one presented by Covid-19 which meant that almost all collaboration had to be done remotely.</p>
-            <p>One of the lessons we learned in the process was that better device hardware such as camera and processor makes a better AR experience in the case of tracking.</p>
+          <h5>Obstacles & Lessons learned</h5>
+          The biggest obstacle we had was that we didn’t figure out data persistence between scenes and sessions until
+          very late in the process,
+          which meant that we didn’t have a real start to finish-game loop until the data persistence worked.
+          And had we started working on data persistence much earlier, we wouldn't have know what data would have to be
+          saved.
+          <p>Another obstacle was of course the one presented by Covid-19 which meant that almost all collaboration had
+            to be done remotely.</p>
+          <p>One of the lessons we learned in the process was that better device hardware such as camera and processor
+            makes a better AR experience in the case of tracking.</p>
           </p>
         </div>
         <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="ffirst"></button>
@@ -137,19 +152,27 @@
       <div class="w3-modal-content w3-animate-top w3-card-4">
         <header class="w3-container palette-1-dark w3-center w3-padding-32">
           <span onclick="document.getElementById('secondModal').style.display='none'"
-         class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-         <h2 class="w3-wide">Technology</h2>
-         <p class="w3-center"><i>Technologies and frameworks used for Stellar</i></p>
+            class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Technology</h2>
+          <p class="w3-center"><i>Technologies and frameworks used for Stellar</i></p>
         </header>
         <div class="w3-container palette-2-dark side-padding-32">
           <h5>UNITY3D</h5>
-          <p>Unity3D is a game engine where the user can create custom games 2D and 3D games. It’s relatively easy to use and enables advanced graphic and interaction programming.</p>
+          <p>Unity3D is a game engine where the user can create custom games 2D and 3D games. It’s relatively easy to
+            use and enables advanced graphic and interaction programming.</p>
           <h5>AR-FOUNDATION</h5>
-          <p>AR-Foundation is a toolkit for developing AR-applications for ios and android simultaneously as it wraps both the platform specific libraries ARKit and ARCore respectively. An alternative would have been using Vuforia, but we wanted to learn a new technology as some of us had briefly used Vuforia in another course. </p>
+          <p>AR-Foundation is a toolkit for developing AR-applications for ios and android simultaneously as it wraps
+            both the platform specific libraries ARKit and ARCore respectively. An alternative would have been using
+            Vuforia, but we wanted to learn a new technology as some of us had briefly used Vuforia in another course.
+          </p>
           <h5>SHADERGRAPH</h5>
-          <p>Shadergraph was picked over traditional shader-programing directly in code as we did not have much experience with the latter and Shadergraph gives a more direct visual feedback on what you are doing. It proved to be great for creating procedural materials.</p>
+          <p>Shadergraph was picked over traditional shader-programing directly in code as we did not have much
+            experience with the latter and Shadergraph gives a more direct visual feedback on what you are doing. It
+            proved to be great for creating procedural materials.</p>
           <h5>BLENDER</h5>
-          <p>Blender is primarily a 3D modelling software which was used in the project to a limited degree. Since the meshes for the planets were all created procedurally, or based on a basic sphere, the only use we had for premade 3D-objects in the demo were the asteroids.</p>
+          <p>Blender is primarily a 3D modelling software which was used in the project to a limited degree. Since the
+            meshes for the planets were all created procedurally, or based on a basic sphere, the only use we had for
+            premade 3D-objects in the demo were the asteroids.</p>
 
         </div>
         <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="fsecond"></button>
@@ -162,41 +185,78 @@
       <div class="w3-modal-content w3-animate-top w3-card-4">
         <header class="w3-container palette-1-dark w3-center w3-padding-32">
           <span onclick="document.getElementById('thirdModal').style.display='none'"
-         class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+            class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
           <h2 class="w3-wide">Challenges</h2>
           <p class="w3-center"><i>Challenges we've encounterd and overcame during the course of the project</i></p>
         </header>
         <div class="w3-container palette-2-dark side-padding-32">
           <p>
-              <!-- AR TRACKING --->
-              <h5>AR-TRACKING</h5>
-              During the project we noticed that the AR-tracking provided with ARCore and ARKit is not always the most accurate. We built our app around markerless tracking, thinking that it would be better for a portable experience to not have some arbitrary peripheral. We used the built in feature-point and plane tracking of the AR-toolkits wrapped by ARFoundation. We noticed that reflective surfaces, such as large screens, can be detrimental to the spatial tracking. There were also issues with how much hardware affected the tracking, as we noticed that phones with more advanced cameras usually performed better tracking-wise.
-              <br>
+            <!-- AR TRACKING --->
+          <h5>AR-TRACKING</h5>
+          During the project we noticed that the AR-tracking provided with ARCore and ARKit is not always the most
+          accurate. We built our app around markerless tracking, thinking that it would be better for a portable
+          experience to not have some arbitrary peripheral. We used the built in feature-point and plane tracking of the
+          AR-toolkits wrapped by ARFoundation. We noticed that reflective surfaces, such as large screens, can be
+          detrimental to the spatial tracking. There were also issues with how much hardware affected the tracking, as
+          we noticed that phones with more advanced cameras usually performed better tracking-wise.
+          <br>
 
-              <!-- MESH GENERATION --->
-              <br>
-              <h5>GEOMETRY OF PLANET MESH</h5>
-              Finding a good way of representing a sphere with triangles is not completely trivial. We started out using a cube which we deformed into a sphere by setting every point to unit distance from the center. This option gave us a lot of freedom when it came to how detailed we wanted our sphere to be. Simply increasing the number of vertices in every face of the cube we got a finer division. This approach does however give some weird visual artifacts and prominent seems where the cube faces meet.
-              <br>
-              In the end we ended up with a solution built upon the Ico Sphere. We start out with an icosahedron where every vertex is unit length from the center. We can then divide every triangle into three new triangles and thus increase the detail and make the shape more sphere-like. This approach gives us less control of the resolution since we can only increase the number of triangles three fold every time. We did however get rid of the artifacting from the previous method and overall it looked a lot better.
-              <br>
+          <!-- MESH GENERATION --->
+          <br>
+          <h5>GEOMETRY OF PLANET MESH</h5>
+          Finding a good way of representing a sphere with triangles is not completely trivial. We started out using a
+          cube which we deformed into a sphere by setting every point to unit distance from the center. This option gave
+          us a lot of freedom when it came to how detailed we wanted our sphere to be. Simply increasing the number of
+          vertices in every face of the cube we got a finer division. This approach does however give some weird visual
+          artifacts and prominent seems where the cube faces meet.
+          <br>
+          In the end we ended up with a solution built upon the Ico Sphere. We start out with an icosahedron where every
+          vertex is unit length from the center. We can then divide every triangle into three new triangles and thus
+          increase the detail and make the shape more sphere-like. This approach gives us less control of the resolution
+          since we can only increase the number of triangles three fold every time. We did however get rid of the
+          artifacting from the previous method and overall it looked a lot better.
+          <br>
 
-              <!--  SAVING / LOADING--->
-              <br>
-              <h5>SERIALIZATION AND PERSISTANCE</h5>
-              To serialize and create custom data structures to be able to save scene and game object data was fairly straightforward. We converted the data to JSON files which we stored locally on the users device. However, we had some trouble with loading the data correctly since the aesthetic data and physics data were separated. This made it important to load the correct match of aesthetic and physics data to a planet. It also required us to load the data in a specific order and to clean up the scene between loading star systems.
-              <br>
+          <!--  SAVING / LOADING--->
+          <br>
+          <h5>SERIALIZATION AND PERSISTANCE</h5>
+          To serialize and create custom data structures to be able to save scene and game object data was fairly
+          straightforward. We converted the data to JSON files which we stored locally on the users device. However, we
+          had some trouble with loading the data correctly since the aesthetic data and physics data were separated.
+          This made it important to load the correct match of aesthetic and physics data to a planet. It also required
+          us to load the data in a specific order and to clean up the scene between loading star systems.
+          <br>
 
-              <!-- GRAVITY SIM --->
-              <br>
-              <h5>NEWTONIAN GRAVITY SIMULATION</h5>
-              The two major approaches on how to create gravity in Unity are force based and acceleration based. In the force based method forces are applied to objects in a scene in accordance to the Newtonian gravity equation. Then the Unity physics engine automatically calculates the velocity and next position of the objects. In contrast, in the acceleration based methods the acceleration is calculated in accordance with the Newtonian gravity equation. This approach also decouples the calculations from the built-in physics engine. This means that the position and velocity calculations of the objects have to be scripted manually. After experimenting with both methods we decided to go with the acceleration based method. This is because we had problems with the trajectory calculations with the force based method. When the trajectory is calculated the simulation is paused and the trajectory simulation starts in order to predict how a planet would move in the starsystem given the initial velocity and position which is decided by the user. With the force based method the planets did not move exactly with their trajectories, but with the acceleration based method we got more control of the calculations which in the end resulted in a better trajectory. A great source of inspiration was: Sebastian Lague - Coding Adventure
-              <br>
+          <!-- GRAVITY SIM --->
+          <br>
+          <h5>NEWTONIAN GRAVITY SIMULATION</h5>
+          The two major approaches on how to create gravity in Unity are force based and acceleration based. In the
+          force based method forces are applied to objects in a scene in accordance to the Newtonian gravity equation.
+          Then the Unity physics engine automatically calculates the velocity and next position of the objects. In
+          contrast, in the acceleration based methods the acceleration is calculated in accordance with the Newtonian
+          gravity equation. This approach also decouples the calculations from the built-in physics engine. This means
+          that the position and velocity calculations of the objects have to be scripted manually. After experimenting
+          with both methods we decided to go with the acceleration based method. This is because we had problems with
+          the trajectory calculations with the force based method. When the trajectory is calculated the simulation is
+          paused and the trajectory simulation starts in order to predict how a planet would move in the starsystem
+          given the initial velocity and position which is decided by the user. With the force based method the planets
+          did not move exactly with their trajectories, but with the acceleration based method we got more control of
+          the calculations which in the end resulted in a better trajectory. A great source of inspiration was:
+          Sebastian Lague - Coding Adventure
+          <br>
 
-              <!--  GAS PLANET --->
-              <br>
-              <h5>GAS PLANET STORM</h5>
-              The banding and swirling noise of the gas planets was easy enough to implement in Shadergraph using various generated noise and UV-mapping-tricks. The storms proved to be more challenging. For aesthetic purposes the ideal storm would affect the swirling noise in the bands on the material. This was put to the wayside as it would have required something along the lines of a  fluid simulation which, even though it would have been possible to do, might have affected the performance on less advanced phones. Instead, a method using a simple oval texture that was manipulated with various UV-mapping nodes provided a convincing simili to a storm. This method was based on what reddit user jamqdlaty presents here https://www.reddit.com/r/Unity3D/comments/hiljpk/gas_giant_shader_shadergraph/ after a discussion with them through the forum.
+          <!--  GAS PLANET --->
+          <br>
+          <h5>GAS PLANET STORM</h5>
+          The banding and swirling noise of the gas planets was easy enough to implement in Shadergraph using various
+          generated noise and UV-mapping-tricks. The storms proved to be more challenging. For aesthetic purposes the
+          ideal storm would affect the swirling noise in the bands on the material. This was put to the wayside as it
+          would have required something along the lines of a fluid simulation which, even though it would have been
+          possible to do, might have affected the performance on less advanced phones. Instead, a method using a simple
+          oval texture that was manipulated with various UV-mapping nodes provided a convincing simili to a storm. This
+          method was based on what reddit user jamqdlaty presents here
+          https://www.reddit.com/r/Unity3D/comments/hiljpk/gas_giant_shader_shadergraph/ after a discussion with them
+          through the forum.
 
           </p>
         </div>
@@ -210,17 +270,25 @@
       <div class="w3-modal-content w3-animate-top w3-card-4">
         <header class="w3-container palette-1-dark w3-center w3-padding-32">
           <span onclick="document.getElementById('fourthModal').style.display='none'"
-         class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+            class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
           <h2 class="w3-wide">Related Work</h2>
           <p class="w3-center"><i>Inspiration from previous projects</i></p>
         </header>
         <div class="w3-container palette-2-dark side-padding-32">
           <h5>AR Solar System, Arthur Arzumanyan, 2017</h5>
-          <p>This app gives the user an AR-representation of <b>OUR</b> solar-system, with both marker and markerless tracking. We want to similarly display a stellar system in AR in our project but have also included an aspect of <b>USER</b> customization of the solar system and physical simulations of the system. In Stellar you are in more involved interactive experience: Your'e not only a spectator, you are also the creator.</p>
+          <p>This app gives the user an AR-representation of <b>OUR</b> solar-system, with both marker and markerless
+            tracking. We want to similarly display a stellar system in AR in our project but have also included an
+            aspect of <b>USER</b> customization of the solar system and physical simulations of the system. In Stellar
+            you are in more involved interactive experience: Your'e not only a spectator, you are also the creator.</p>
           <h5>Universe Sandbox, Giant Army, 2011</h5>
-          <p>Universe sandbox is a newtonian physics simulation of celestial objects and bodies that a player can control by placing out objects like planets, suns and black holes and watch how they interact. We want to do similar things with the stellar systems that the user will be able to create in our project.</p>
+          <p>Universe sandbox is a newtonian physics simulation of celestial objects and bodies that a player can
+            control by placing out objects like planets, suns and black holes and watch how they interact. We want to do
+            similar things with the stellar systems that the user will be able to create in our project.</p>
           <h5>BeBeam</h5>
-          <p>BeBeam is an AR experience that lets the user place out virtual prisms in physical space, leading a beam of light from a source to a target. It is related to our project in the sense that it involves using the same kind of technology that we are interested in, more specifically how it tracks virtual objects in physical space.</p>
+          <p>BeBeam is an AR experience that lets the user place out virtual prisms in physical space, leading a beam of
+            light from a source to a target. It is related to our project in the sense that it involves using the same
+            kind of technology that we are interested in, more specifically how it tracks virtual objects in physical
+            space.</p>
         </div>
         <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="ffourth"></button>
         <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bfourth"></button>
@@ -230,7 +298,7 @@
     <!-- The Media Section -->
     <div class="palette-1 w3-center w3-container zeropad" id="technology">
       <h2 class="w3-wide header">MEDIA</h2>
-        <div class="zeropad" style="margin:0px !important">
+      <div class="zeropad" style="margin:0px !important">
         <div class="w3-display-container" style="margin:0px !important">
           <div class="mySlides zeropad">
             <img class="zeropad" src="images/stellarSystem.png" style="width:100%">
@@ -238,10 +306,11 @@
               DOWNLOAD
             </a>
           </div>
-         
+
           <div class="mySlides zeropad">
             <img class="zeropad" src="images/more.png" style="width:100%">
-            <a href="https://github.com/lindacnatt/AGI20_Group10_StellAR" target="_blank" class="btn w3-button palette-4 w3-display-middle">
+            <a href="https://github.com/lindacnatt/AGI20_Group10_StellAR" target="_blank"
+              class="btn w3-button palette-4 w3-display-middle">
               GITHUB REPOSITORY
             </a>
           </div>
@@ -262,8 +331,8 @@
           <!------ ABOUT US BUTTONS ----------------------------->
 
           <button class="col-xs-2 w3-button clickable-container w3-padding-32"
-          onclick="document.getElementById('LindaModal').style.display='block'">
-          <img class="profile-pic" src="images/linda.jpeg">
+            onclick="document.getElementById('LindaModal').style.display='block'">
+            <img class="profile-pic" src="images/linda.jpeg">
             <p style="font-size:18px; margin: 0.5em;">Linda Cnattingius</p>
             <p style="font-size:12px; margin: 0.5em;"><i>UX&UI design and Planet Creation</i></p>
           </button>
@@ -276,21 +345,21 @@
           </button>
 
           <button class="col-xs-2 w3-button clickable-container w3-padding-32"
-          onclick="document.getElementById('PlatonModal').style.display='block'">
+            onclick="document.getElementById('PlatonModal').style.display='block'">
             <img class="profile-pic" src="images/platon.jpeg">
             <p style="font-size:20px; margin: 0.5em;">Platon Woxler</p>
             <p style="font-size:12px; margin: 0.5em;"><i>Planet Creation and Mesh Generation</i></p>
           </button>
 
           <button class="col-xs-2 w3-button clickable-container w3-padding-32"
-          onclick="document.getElementById('JesperModal').style.display='block'">
+            onclick="document.getElementById('JesperModal').style.display='block'">
             <img class="profile-pic" src="images/jesper.jpeg">
             <p style="font-size:20px; margin: 0.5em;">Jesper Englund</p>
             <p style="font-size:12px; margin: 0.5em;"><i>Data management & Mesh Generation</i></p>
           </button>
 
           <button class="col-xs-2 w3-button clickable-container w3-padding-32"
-          onclick="document.getElementById('JussiModal').style.display='block'">
+            onclick="document.getElementById('JussiModal').style.display='block'">
             <img class="profile-pic" src="images/jussi.jpeg">
             <p style="font-size:20px; margin: 0.5em;">Jussi Kangas</p>
             <p style="font-size:12px; margin: 0.5em;"><i>Physics interactions and simulations</i></p>
@@ -305,149 +374,154 @@
     <!------ About Each person ----------------------------->
 
     <!------ Linda ----------------------------->
-      <div id="LindaModal" class="w3-modal">
-        <div class="w3-modal-content w3-animate-top w3-card-4">
-          <header class="w3-container palette-1-dark w3-center w3-padding-32">
-            <span onclick="document.getElementById('LindaModal').style.display='none'"
-              class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-            <h2 class="w3-wide">Linda Cnattingius</h2>
-            <p class="w3-center"><i>lindacn@kth.se</i></p>
-          </header>
-          <div class="info">
-            <div class="w3-container palette-2-dark side-padding-32 content">
-              <h3>Responsibilities</h3>
-              <ul>
-                <li>Customized textures and shaders for solid planets and sun</li>
-                <li>Particle system generation</li>
-                <li>User Interface design with customized sprites and UI System</li>
-                <li>Interactions for planet customization</li>
-                <li>Shake detection for randomization</li>
-                <li>Triangle slider for color customization</li>
-              </ul>
-            </div>
-            <!------ ÄNDRA BILD HÄR ----------------------------->
-            <img class="col-md-3 image" style="padding: 10;" src="images/linda.jpeg">
+    <div id="LindaModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1-dark w3-center w3-padding-32">
+          <span onclick="document.getElementById('LindaModal').style.display='none'"
+            class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Linda Cnattingius</h2>
+          <p class="w3-center"><i>lindacn@kth.se</i></p>
+        </header>
+        <div class="info">
+          <div class="w3-container palette-2-dark side-padding-32 content">
+            <h3>Responsibilities</h3>
+            <ul>
+              <li>Customized textures and shaders for solid planets and sun</li>
+              <li>Particle system generation</li>
+              <li>User Interface design with customized sprites and UI System</li>
+              <li>Interactions for planet customization</li>
+              <li>Shake detection for randomization</li>
+              <li>Triangle slider for color customization</li>
+            </ul>
           </div>
+          <!------ ÄNDRA BILD HÄR ----------------------------->
+          <img class="col-md-3 image" style="padding: 10;" src="images/linda.jpeg">
         </div>
       </div>
-      <!------ Calle  ----------------------------->
-      <div id="CalleModal" class="w3-modal">
-        <div class="w3-modal-content w3-animate-top w3-card-4">
-          <header class="w3-container palette-1-dark w3-center w3-padding-32">
-            <span onclick="document.getElementById('CalleModal').style.display='none'"
-              class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-            <h2 class="w3-wide">Carl Calado Zettergren</h2>
-            <p class="w3-center"><i>carzet@kth.se</i></p>
-          </header>
-          <div class="info">
-            <div class="w3-container palette-2-dark side-padding-32 content">
-              <h3>Responsibilities</h3>
-              <ul>
-                <li>Initial AR-Scene management and implementation in Unity3d using ARFoundation</li>
-                <li>Data-gathering about exoplanets and stellar systems</li>
-                <li>Customizable and multi-instantiatable procedural texture/material for gas planets using Shadergraph</li>
-                <li>UI for gas planet customization</li>
-              </ul>
-            </div>
-            <!------ ÄNDRA BILD HÄR ----------------------------->
-            <img class="col-md-3 image" style="padding: 10;" src="images/calle.jpeg">
-          </div>
-        </div>
-      </div>
-      <!------ Platon ----------------------------->
-      <div id="PlatonModal" class="w3-modal">
-        <div class="w3-modal-content w3-animate-top w3-card-4">
-          <header class="w3-container palette-1-dark w3-center w3-padding-32">
-            <span onclick="document.getElementById('PlatonModal').style.display='none'"
-              class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-            <h2 class="w3-wide">Platon Woxler</h2>
-            <p class="w3-center"><i>platon@kth.se</i></p>
-          </header>
-          <div class="info">
-            <div class="w3-container palette-2-dark side-padding-32 content">
-              <h3>Responsibilities</h3>
-              <ul>
-                <li>Procedural mesh generation and manipulation</li>
-                <li>User interaction for mesh deformation & Planet Creation</li>
-              </ul>
-            </div>
-            <!------ ÄNDRA BILD HÄR ----------------------------->
-            <img class="col-md-3 image" style="padding: 10;" src="images/platon.jpeg">
-          </div>
-        </div>
-      </div>
-
-          <!------ Jesper ----------------------------->
-          <div id="JesperModal" class="w3-modal">
-            <div class="w3-modal-content w3-animate-top w3-card-4">
-              <header class="w3-container palette-1-dark w3-center w3-padding-32">
-                <span onclick="document.getElementById('JesperModal').style.display='none'"
-                  class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-                <h2 class="w3-wide">Jesper Englund</h2>
-                <p class="w3-center"><i>jeengl@kth.se</i></p>
-              </header>
-              <div class="info">
-                <div class="w3-container palette-2-dark side-padding-32 content">
-                    <h3>Responsibilities</h3>
-                    <ul>
-                      <li>Procedural mesh generation and manipulation</li>
-                      <li>Data management - Serialization of assets and saving planet data between scenes and game sessions</li>
-                      <li>Sound design</li>
-                      <li>Animations - Explosions and UI</li>
-                      <li>3D modelling - Asteroids</li>
-                    </ul>
-                </div>
-                <!------ ÄNDRA BILD HÄR ----------------------------->
-                <img class="col-md-3 image" style="padding: 10;" src="images/jesper.jpeg">
-            </div>
-            </div>
-          </div>
-            <!------ Jussi ----------------------------->
-          <div id="JussiModal" class="w3-modal">
-            <div class="w3-modal-content w3-animate-top w3-card-4">
-              <header class="w3-container palette-1-dark w3-center w3-padding-32">
-                <span onclick="document.getElementById('JussiModal').style.display='none'"
-                  class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
-                <h2 class="w3-wide">Jussi Kangas</h2>
-                <p class="w3-center"><i>JussiKangas@kth.se</i></p>
-              </header>
-              <div class="info">
-                <div class="w3-container palette-2-dark side-padding-32 content">
-                  <h3>Responsibilities</h3>
-                  <ul>
-                    <li>Created the Newtonian gravity simulation, planet trajectory simulation and options for gravity settings</li>
-                    <li>Interactions related to the gravity simulation (trajectory, planet rotation) in the AR-scene</li>
-                    <li>Serialization of  assets and primarily saving the physics data between scenes and game sessions</li>
-                  </ul>
-                </div>
-                <!------ ÄNDRA BILD HÄR ----------------------------->
-                <img class="col-md-3 image" style="padding: 10;" src="images/jussi.jpeg">
-              </div>
-            </div>
-          </div>
     </div>
-
-    <!-- The Contact Section -->
-    <div class="w3-container w3-padding-32 palette-1-dark" style="width:100%" id="contact">
-      <h2 class="w3-wide w3-center">CONTACT</h2>
-      <p class="w3-opacity w3-center"><i>Do you want to do business?</i></p>
-      <div class="w3-display-container w3-padding-16" style="height:200px">
-        <div class="w3-display-middle w3-left" style="width:350px">
-          <div class="w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker" style="width:30px"></i> Stockholm, Sweden<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> lindacn@kth.se<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> carzet@kth.se<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> platon@kth.se<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> jeengl@kth.se<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> jkangas@kth.se<br>
+    <!------ Calle  ----------------------------->
+    <div id="CalleModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1-dark w3-center w3-padding-32">
+          <span onclick="document.getElementById('CalleModal').style.display='none'"
+            class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Carl Calado Zettergren</h2>
+          <p class="w3-center"><i>carzet@kth.se</i></p>
+        </header>
+        <div class="info">
+          <div class="w3-container palette-2-dark side-padding-32 content">
+            <h3>Responsibilities</h3>
+            <ul>
+              <li>Initial AR-Scene management and implementation in Unity3d using ARFoundation</li>
+              <li>Data-gathering about exoplanets and stellar systems</li>
+              <li>Customizable and multi-instantiatable procedural texture/material for gas planets using Shadergraph
+              </li>
+              <li>UI for gas planet customization</li>
+            </ul>
           </div>
+          <!------ ÄNDRA BILD HÄR ----------------------------->
+          <img class="col-md-3 image" style="padding: 10;" src="images/calle.jpeg">
+        </div>
+      </div>
+    </div>
+    <!------ Platon ----------------------------->
+    <div id="PlatonModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1-dark w3-center w3-padding-32">
+          <span onclick="document.getElementById('PlatonModal').style.display='none'"
+            class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Platon Woxler</h2>
+          <p class="w3-center"><i>platon@kth.se</i></p>
+        </header>
+        <div class="info">
+          <div class="w3-container palette-2-dark side-padding-32 content">
+            <h3>Responsibilities</h3>
+            <ul>
+              <li>Procedural mesh generation and manipulation</li>
+              <li>User interaction for mesh deformation & Planet Creation</li>
+            </ul>
+          </div>
+          <!------ ÄNDRA BILD HÄR ----------------------------->
+          <img class="col-md-3 image" style="padding: 10;" src="images/platon.jpeg">
         </div>
       </div>
     </div>
 
-    <!-- End Page Content -->
+    <!------ Jesper ----------------------------->
+    <div id="JesperModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1-dark w3-center w3-padding-32">
+          <span onclick="document.getElementById('JesperModal').style.display='none'"
+            class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Jesper Englund</h2>
+          <p class="w3-center"><i>jeengl@kth.se</i></p>
+        </header>
+        <div class="info">
+          <div class="w3-container palette-2-dark side-padding-32 content">
+            <h3>Responsibilities</h3>
+            <ul>
+              <li>Procedural mesh generation and manipulation</li>
+              <li>Data management - Serialization of assets and saving planet data between scenes and game sessions</li>
+              <li>Sound design</li>
+              <li>Animations - Explosions and UI</li>
+              <li>3D modelling - Asteroids</li>
+            </ul>
+          </div>
+          <!------ ÄNDRA BILD HÄR ----------------------------->
+          <img class="col-md-3 image" style="padding: 10;" src="images/jesper.jpeg">
+        </div>
+      </div>
+    </div>
+    <!------ Jussi ----------------------------->
+    <div id="JussiModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1-dark w3-center w3-padding-32">
+          <span onclick="document.getElementById('JussiModal').style.display='none'"
+            class="w3-button palette-3 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Jussi Kangas</h2>
+          <p class="w3-center"><i>JussiKangas@kth.se</i></p>
+        </header>
+        <div class="card w3-center" style="background-color: #101013">
+          <div class="info">
+            <div class="w3-container palette-2-dark side-padding-32 content">
+              <h3>Responsibilities</h3>
+              <ul>
+                <li>Created the Newtonian gravity simulation, planet trajectory simulation and options for gravity
+                  settings</li>
+                <li>Interactions related to the gravity simulation (trajectory, planet rotation) in the AR-scene</li>
+                <li>Serialization of assets and primarily saving the physics data between scenes and game sessions</li>
+              </ul>
+            </div>
+            <!------ ÄNDRA BILD HÄR ----------------------------->
+            <img class="col-md-3 image" style="padding: 10;" src="images/jussi.jpeg">
+          </div>
+          <img class="w3-center proj-img"  src="images/trajectory_examplev1.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="js/script.js"></script>
+  <!-- The Contact Section -->
+  <div class="w3-container w3-padding-32 palette-1-dark" style="width:100%" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Do you want to do business?</i></p>
+    <div class="w3-display-container w3-padding-16" style="height:200px">
+      <div class="w3-display-middle w3-left" style="width:350px">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker" style="width:30px"></i> Stockholm, Sweden<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> lindacn@kth.se<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> carzet@kth.se<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> platon@kth.se<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> jeengl@kth.se<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> jkangas@kth.se<br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Page Content -->
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
