@@ -8,7 +8,7 @@
 .palette-2-dark {color:#fff !important;background-color:#131010 !important}
 
 .clickable-container {margin:0px !important}
-.clickable-container:hover {color:#000 !important;background-color:#aea0a052 !important}
+.clickable-container:hover {color:#000 !important;background-color:#aea0a0 !important}
 .clickable-container:active {border:0px !important; outline: 0}
 .clickable-container:focus {border:0px !important; outline: 0}
 
