@@ -1,14 +1,14 @@
-.palette-1 {color:#fff !important;background-color:#232325 !important}
+.palette-1 {color:rgba(255, 255, 255, 0) !important;background-color:#23232500 !important}
 .palette-1-light {color:#000 !important;background-color:#baa9a9 !important}
 .palette-1-dark {color:#fff !important;background-color:#221b1b !important}
 .p1:hover {color:#000 !important;background-color:#baa9a9 !important}
 
-.palette-2 {color:#fff !important;background-color:#151518 !important}
+.palette-2 {color:#fff !important;background-color:#15151842 !important}
 .palette-2-light {color:#000 !important;background-color:#aea0a0 !important}
 .palette-2-dark {color:#fff !important;background-color:#131010 !important}
 
 .clickable-container {margin:0px !important}
-.clickable-container:hover {color:#000 !important;background-color:#aea0a0 !important}
+.clickable-container:hover {color:#000 !important;background-color:#aea0a052 !important}
 .clickable-container:active {border:0px !important; outline: 0}
 .clickable-container:focus {border:0px !important; outline: 0}
 
@@ -168,3 +168,11 @@ h5{
   width: 100%;
   height: 100%;
 }
+
+body {
+  background-image: url('../images/starbackground-01.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #cccccc;
+ }
