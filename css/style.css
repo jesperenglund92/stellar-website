@@ -40,6 +40,10 @@
   padding: 64px;
 }
 
+.indcont {
+  padding:0.5vw
+}
+
 .nextbtn {
   background-color:transparent;
   border:0px;
@@ -166,7 +170,6 @@ h5{
   overflow: hidden;
   padding-top: 28.125%;
 }
-
 
 .responsive-iframe {
   position: absolute;
